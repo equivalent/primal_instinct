@@ -45,7 +45,7 @@ bundle exec bin/primal_instinct
 bundle exec bin/primal_instinct -h
 bundle exec bin/primal_instinct --count=6
 bundle exec bin/primal_instinct --count=6 -l
-bundle exec bin/primal_instinct --count=6 -o
+bundle exec bin/primal_instinct --count=6 -r
 ```
 
 ## Development
