@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/equivalent/primal_instinct.svg)](https://travis-ci.org/equivalent/primal_instinct)
+[![Code Climate](https://codeclimate.com/github/equivalent/primal_instinct/badges/gpa.svg)](https://codeclimate.com/github/equivalent/primal_instinct)
+[![Test Coverage](https://codeclimate.com/github/equivalent/primal_instinct/badges/coverage.svg)](https://codeclimate.com/github/equivalent/primal_instinct/coverage)
+
 # PrimalInstinct
 
 This is simple gem for generating Prime Multifier Table in console
