@@ -34,23 +34,39 @@ Main focuse of the excercise was:
 
 ## Installation
 
-Add this line to your application's Gemfile:
+```bash
+$ gem install primal_instinct
+```
+
+... or place this to your Gemfile 
+
 
 ```bash
-git clone https://github.com/equivalent/primal_instinct
-cd primal_instinct
-bundle install
-bundle exec bin/primal_instinct
+gem 'primal_instinct'
 ```
+
+...and run  `bundle install`
 
 ## Usage
 
 ```bash
-bundle exec bin/primal_instinct -h
-bundle exec bin/primal_instinct --count=6
-bundle exec bin/primal_instinct --count=6 -l
-bundle exec bin/primal_instinct --count=6 -r
+primal_instinct -h
+primal_instinct --count=6
+primal_instinct --count=6 -l
+primal_instinct --count=6 -r
+
+# or maybe
+
+bundle exec primal_instinct -h
 ```
+
+## Extensibility
+
+Gem can be easily extended with custom generating algorithms, check the
+`lib/primal_instinct/generator` and `PrimalInstinct.generators`
+
+Customly added generators will automatically appear in the option list
+`-h` (check `exe/primal_instinct`)
 
 ## Development
 
