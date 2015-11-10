@@ -1,19 +1,6 @@
 require 'spec_helper'
 
-require 'prime'
-class RubyPrime
-  attr_reader :length
-
-  def initialize(length)
-    @length = length
-  end
-
-  def call
-    Prime.first(length)
-  end
-end
-
-RSpec.describe RubyPrime do
+RSpec.describe PrimalInstinct::Generator::RubyPrime do
   subject { described_class.new(length) }
 
   context 'when generating 1 number' do
