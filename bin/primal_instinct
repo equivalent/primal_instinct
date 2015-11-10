@@ -31,12 +31,14 @@ OptionParser.new do |opts|
 end.parse!
 
 
-args = {
-  generator: options.fetch(:generator),
-  count: options.fetch(:count).to_i
-}
+if options[:count]
+  args = {
+    generator: options.fetch(:generator),
+    count: options.fetch(:count).to_i
+  }
 
-puts "Generating with #{options.fetch(:generator)}"
+  puts "Generating with #{options.fetch(:generator)}"
 
-rows = PrimalInstinct.generate(args)
-puts Terminal::Table.new(rows: rows)
+  rows = PrimalInstinct.generate(args)
+  puts Terminal::Table.new(rows: rows)
+end

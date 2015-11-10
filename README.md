@@ -1,28 +1,52 @@
 # PrimalInstinct
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/primal_instinct`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is simple gem for generating Prime Multifier Table in console
 
-TODO: Delete this and the text above, and describe your gem
+```
++----+----+----+-----+-----+-----+-----+-----+-----+-----+
+|    | 2  | 3  | 5   | 7   | 11  | 13  | 17  | 19  | 23  |
+| 2  | 4  | 6  | 10  | 14  | 22  | 26  | 34  | 38  | 46  |
+| 3  | 6  | 9  | 15  | 21  | 33  | 39  | 51  | 57  | 69  |
+| 5  | 10 | 15 | 25  | 35  | 55  | 65  | 85  | 95  | 115 |
+| 7  | 14 | 21 | 35  | 49  | 77  | 91  | 119 | 133 | 161 |
+| 11 | 22 | 33 | 55  | 77  | 121 | 143 | 187 | 209 | 253 |
+| 13 | 26 | 39 | 65  | 91  | 143 | 169 | 221 | 247 | 299 |
+| 17 | 34 | 51 | 85  | 119 | 187 | 221 | 289 | 323 | 391 |
+| 19 | 38 | 57 | 95  | 133 | 209 | 247 | 323 | 361 | 437 |
+| 23 | 46 | 69 | 115 | 161 | 253 | 299 | 391 | 437 | 529 |
++----+----+----+-----+-----+-----+-----+-----+-----+-----+
+
+```
+
+Main focuse of the excercise was:
+
+1. Consider code readability/complexity
+2. Consider SOLID principles, but do not over­engineer
+3. Consider extensibility
+4. Feel free to use any library or gem in both implementation and tests, but please write your own code for the prime number generator.
+5. Consider how you can prove the correctness of your application
+6. Write it in Ruby 
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'primal_instinct'
+```bash
+git clone https://github.com/equivalent/primal_instinct
+cd primal_instinct
+bundle install
+bundle exec bin/primal_instinct
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install primal_instinct
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+bundle exec bin/primal_instinct -h
+bundle exec bin/primal_instinct --count=6
+bundle exec bin/primal_instinct --count=6 -l
+bundle exec bin/primal_instinct --count=6 -o
+```
 
 ## Development
 
