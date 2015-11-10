@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "primal_instinct"
+require 'optparse'
+require "terminal-table"
+
+options = { generator: PrimalInstinct.generators.first }
+
+def extract_param(gen)
+  gen.name.split('::').last[0].downcase
+end
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: primal_instinct [options]"
+
+  PrimalInstinct.generators.each do |gen|
+    opts.on("-#{extract_param(gen)}", gen.name) do
+      options[:generator] = gen
+    end
+  end
+
+  opts.on("-cNUMBER", "--count=NUMBER", "Run verbosely") do |count|
+    options[:count] = count
+  end
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
+end.parse!
+
+
+args = {
+  generator: options.fetch(:generator),
+  count: options.fetch(:count).to_i
+}
+
+puts "Generating with #{options.fetch(:generator)}"
+
+rows = PrimalInstinct.generate(args)
+puts Terminal::Table.new(rows: rows)

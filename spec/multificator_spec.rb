@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Multificator do
+RSpec.describe PrimalInstinct::Multificator do
   describe '#multification_table' do
     subject { described_class.multification_table(values) }
 
