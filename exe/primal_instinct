@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
+require 'rubygems'
+begin
+  require "bundler/setup"
+rescue LoadError
+end
 require "primal_instinct"
 require 'optparse'
 require "terminal-table"
