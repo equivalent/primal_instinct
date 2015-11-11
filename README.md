@@ -49,6 +49,8 @@ gem 'primal_instinct'
 
 ## Usage
 
+#### Console
+
 ```bash
 primal_instinct -h
 primal_instinct --count=6
@@ -58,6 +60,14 @@ primal_instinct --count=6 -r
 # or maybe
 
 bundle exec primal_instinct -h
+```
+
+#### In your code
+
+```
+PrimalInstinct.generate(generator: PrimalInstinct::Generator::RubyPrime,
+                        count: 3)
+# => [[nil, 2, 3, 5], [2, 4, 6, 10], [3, 6, 9, 15], [5, 10, 15, 25]]
 ```
 
 ## Extensibility
