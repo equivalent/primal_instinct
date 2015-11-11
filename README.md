@@ -4,7 +4,7 @@
 
 # PrimalInstinct
 
-This is simple gem for generating Prime Multifier Table in console
+This is simple gem for generating Prime Number Multiplier Table in console
 
 ```
 +----+----+----+-----+-----+-----+-----+-----+-----+-----+
@@ -22,7 +22,7 @@ This is simple gem for generating Prime Multifier Table in console
 
 ```
 
-Main focuse of the excercise was:
+This gem was recruitment excercise, where the main focuse was on:
 
 1. Consider code readability/complexity
 2. Consider SOLID principles, but do not over­engineer
@@ -76,7 +76,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/primal_instinct. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/equivalent/primal_instinct. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
